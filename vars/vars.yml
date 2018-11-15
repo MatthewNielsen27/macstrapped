@@ -3,7 +3,7 @@
 dotfile_dir: "{{playbook_dir}}/config"
 license_dir: "{{playbook_dir}}/license"
 
-app_store_email: "matthewnielsen27@gmail.com"
+# app_store_email: "matthewnielsen27@gmail.com"
 
 osx_settings_file: "{{dotfile_dir}}/.osx"
 terminal_theme_file: "{{dotfile_dir}}/Solarized-Dark.terminal"
@@ -24,9 +24,9 @@ dock_folders:
 packages:
   #Brew-Tap
   - { name: homebrew/core,  source: brew-tap }
-  - { name: caskroom/cask,  source: brew-tap }
-  - { name: caskroom/fonts, source: brew-tap }
-  - { name: caskroom/drivers, source: brew-tap }
+  # - { name: caskroom/cask,  source: brew-tap }
+  # - { name: caskroom/fonts, source: brew-tap }
+  # - { name: caskroom/drivers, source: brew-tap }
 
   #Brew-Core
   - { name: htop,                   source: brew }
@@ -68,11 +68,6 @@ packages:
     dotfiles:
       - { src: "{{dotfile_dir}}/.bashrc", dest: "~/.bashrc" }
 
-  - name: zsh
-    source: brew
-    dotfiles:
-      - { src: "{{dotfile_dir}}/.zshrc", dest: "~/.zshrc" }
-
   #Brew-Cask
   - { name: google-chrome,            source: brew-cask }
   - { name: slack,                    source: brew-cask }
@@ -113,6 +108,6 @@ packages:
       - { domain: ~/Library/Group Containers/UBF8T346G9.Office/com.microsoft.officeprefs.plist, key: kCUIThemePreferencesThemeKeyPath, type: int, value: 0 }
 
   # Brew-Cask Fonts
-  - { name: font-hack-nerd-font,               source: brew-cask }
-  - { name: font-sharetechmono-nerd-font-mono, source: brew-cask }
-  - { name: font-fauna-one,                    source: brew-cask }
+  # - { name: font-hack-nerd-font,               source: brew-cask }
+  # - { name: font-sharetechmono-nerd-font-mono, source: brew-cask }
+  # - { name: font-fauna-one,                    source: brew-cask }
